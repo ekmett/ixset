@@ -1,5 +1,5 @@
-Name:                data-ixset
-Version:             0.4.1
+Name:                ixset
+Version:             0.4.2
 Synopsis:            Efficient relational queries on Haskell sets. 
 Description:         Just pick which parts of your data structures you want indexed using an easy to use template-haskell function. Spare yourself the need to write, run, and maintain code that marshalls your data to/from an external relational database just for efficient queries. ixset relies on generics and TH to spare you the boilerplate normally required for such tasks. Modified to remove the heavy weight dependency on happstack.
 License:             BSD3
@@ -42,8 +42,7 @@ Library
   hs-source-dirs:      src
   if flag(tests)
     hs-source-dirs:    tests
-  Exposed-modules:     
-                       Data.IxSet
+  Exposed-modules:     Data.IxSet
                        Data.IxSet.Ix
                        Data.IxSet.Usage
   if flag(tests)
